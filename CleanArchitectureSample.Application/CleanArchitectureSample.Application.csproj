@@ -19,4 +19,10 @@
     <ProjectReference Include="..\CleanArchitectureSample.Domain\CleanArchitectureSample.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Common\" />
+    <Folder Include="DTOs\" />
+    <Folder Include="Features\Trainees\Commands\" />
+  </ItemGroup>
+
 </Project>
