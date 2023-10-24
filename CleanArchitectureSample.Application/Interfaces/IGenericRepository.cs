@@ -7,9 +7,13 @@ using System.Threading.Tasks;
 
 namespace CleanArchitectureSample.Application.Interfaces
 {
-    public interface IGenericRepository<T> where T : class,IEntity
+    public interface IGenericRepository<T> where T : class, IEntity
     {
         IQueryable<T> Entities { get; }
-        List<T> GetAll();    
+        Task<List<T>> GetAll();
+        Task<T> GetById(int id);
+        Task<T> AddAsync(T entity);
+        Task<int> Save(CancellationToken cancellationToken);
+        Task UpdateAsync(T entity);
     }
 }
