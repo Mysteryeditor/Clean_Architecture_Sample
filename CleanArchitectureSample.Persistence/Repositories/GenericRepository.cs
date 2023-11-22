@@ -2,11 +2,6 @@
 using CleanArchitectureSample.Domain.Common;
 using CleanArchitectureSample.Persistence.Contexts;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CleanArchitectureSample.Persistence.Repositories
 {

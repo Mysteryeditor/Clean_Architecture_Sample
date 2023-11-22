@@ -8,5 +8,5 @@ namespace CleanArchitectureSample.Persistence.Contexts
     {
         public TraineeDbContext(DbContextOptions options) : base(options) { }
         public DbSet<Trainee> trainees { get; set; }
-    }
+    }   
 }

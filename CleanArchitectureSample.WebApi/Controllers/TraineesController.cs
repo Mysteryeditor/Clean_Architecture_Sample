@@ -3,6 +3,7 @@ using CleanArchitectureSample.Application.Features.Trainees.Commands.UpdateTrain
 using CleanArchitectureSample.Application.Features.Trainees.Queries.GetAllTrainees;
 using CleanArchitectureSample.Application.Features.Trainees.Queries.GetTraineeById;
 using CleanArchitectureSample.Domain.Entities;
+using CleanArchitectureSample.Shared.Result;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -21,7 +22,7 @@ namespace CleanArchitectureSample.WebApi.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<Trainee>>> GetTrainees()
+        public async Task<ResultModel<List<Trainee>>> GetTrainees()
         {
             return await _mediator.Send(new GetAllTraineesQuery());
         }

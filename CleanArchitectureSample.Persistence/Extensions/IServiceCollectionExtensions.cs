@@ -27,6 +27,7 @@ namespace CleanArchitectureSample.Persistence.Extensions
         {
             services
                 .AddTransient(typeof(IUnitOfWork), typeof(UnitOfWork));
+            services.AddTransient(typeof(ISqlConnectionFactory),typeof(SqlConnectionFactory));
         }
     }
 }
